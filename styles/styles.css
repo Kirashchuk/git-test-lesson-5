@@ -1,0 +1,170 @@
+:root {
+  --size: 20vw;
+  --gap: 20px;
+  --border-width: 5px;
+  --margin: 5px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../images/1659983200_1-kartinkin-net-p-fon-dlya-stranitsi-saita-krasivo-1.jpg);
+  margin: 0;
+  height: 100vw;
+  font-size: 20px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  text-align: center;
+  max-width: 300px;
+  margin: var(--gap) auto;
+  background-color: #57fad6;
+}
+
+li {
+  list-style: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(104, 44, 0);
+}
+
+.content-block {
+  max-width: 1280px;
+  margin: var(--gap) auto;
+}
+
+.wrapper {
+  height: calc(var(--size) + var(--border-width) * 2);
+  background-color: darkgray;
+  float: left;
+  margin: var(--gap);
+  position: relative;
+  border: black solid var(--border-width);
+}
+
+.wrapper--sm {
+  width: calc(var(--size) + var(--border-width) * 2);
+}
+
+.wrapper--lg {
+  width: calc(var(--size) * 2 + var(--border-width) * 2);
+}
+
+.block {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  /* font-size: 30px;
+  color: wheat;
+  display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.block--1 {
+  background-color: orange;
+  top: 0;
+  left: 0;
+}
+
+.block--2 {
+  background-color: green;
+  top: 0;
+  left: 50%;
+}
+
+.block--3 {
+  background-color: magenta;
+  top: 50%;
+  left: 0;
+}
+
+.block--4 {
+  background-color: silver;
+  top: 50%;
+  left: 50%;
+}
+
+.block--5 {
+  background-color: blue;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transform: translate(-60%, 50%);
+}
+
+.block--6 {
+  background-color: blue;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  z-index: 1;
+}
+
+.block--7 {
+  background-color: blue;
+  right: 0;
+  bottom: 0;
+  transform: translate(60%, 50%);
+  z-index: -1;
+}
+
+.block-lg {
+  position: absolute;
+  top: var(--gap);
+  right: var(--gap);
+  bottom: var(--gap);
+  left: var(--gap);
+  background-color: red;
+}
+
+.block--in-lg {
+  width: 25%;
+}
+
+.menu-block {
+  max-width: 100vw;
+  background-color: darkgray;
+  margin: var(--gap) auto;
+  position: static;
+  list-style: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.m-block {
+  width: 20%;
+  display: block;
+  position: relative;
+  margin: var(--margin);
+  border: transparent solid var(--border-width);
+
+}
+
+.m-block:hover {
+  border: black solid var(--border-width);
+}
+
+.block-link {
+  margin-bottom: var(--gap);
+  background-color: blueviolet;
+}
+
+.img-in {
+  width: 80%;
+  height: 10rem;
+}
+
+.m-block:hover .block-link {
+  background-color: #57fad6;
+}
